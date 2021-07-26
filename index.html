@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Medicine </title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div id="main">
+    <div id="nav-overlay">
+    </div>
+    <div id="nav-top">
+      <img src="./image/Capture.PNG" alt="" style="width: 480px;">
+    </div>
+    <div id="header">
+      <label id="toggle">
+        <i onclick="toggle()"  id="minh"class="fas fa-bars"></i>
+       </label> 
+      <div id="nav-logo">
+        <div id="nav-img">
+          <img src="./image/logo.png" alt="Anh Logo">
+        </div>
+      </div>
+      <div id="nav">
+        <ul>
+          <li> <a href="">GIỚI THIỆU</a><br>  
+            <!-- <i class="fas fa-minus" style="margin-top:23px;"></i> -->
+          </li>
+          <li> <a href="">SẢN PHẨM
+            <i class="fas fa-angle-down"></i>
+          </a> </li>
+          <li> <a href="">DỊCH VỤ</a> </li>
+          <li> <a href="">TIN TỨC-SỰ KIỆN 
+            <i class="fas fa-angle-down"></i>
+          </a></li>
+          <li> <a href="">LIÊN HỆ </a></li>
+        </ul>
+      </div>
+      <div id="main-menu-second" onblur="clickout()">
+        <ul id="main-menu" >
+          <li>
+              <a href="">Trang chủ</a>
+          </li>
+          <li>
+              <a href="">Giới thiệu</a>
+          </li>
+          <li>
+              <a href="">Sản phẩm</a>
+          </li>
+          <li>
+              <a href="">Dịch Vụ </a>
+          </li>
+          <li>
+              <a href="">Đăng nhập</a>
+          </li>
+        </ul>
+        <i onclick="out()" class="fas fa-times"></i>
+      </div> 
+      <div id="nav-search">
+        <input type="text" placeholder="Tìm kiêm" style="border-radius: 15px;" />
+        <i class="fas fa-search"></i>
+      </div>
+      <div id="nav-people">
+        <i class="fas fa-user-alt"></i>
+      </div>
+    </div>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./image/backgroun.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./image/backgroun.jpg" class="d-block w-100 " alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./image/backgroun.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <div id="product">
+    </div>
+    <div id="container">
+      <div id="container-new-product">
+        <p>
+          <a href="">XEM THÊM >></a>
+        </p>
+      </div>
+      <div id="container-text-hr">
+        <hr class="text-hr-first">
+        <p id="text-first">New Product</p>
+        <hr class="text-hr-second">
+      </div>
+      <div id="container-card" class="product">
+        <div id="container-card-activated" class="card" style="width: 15rem;">
+          <img src="./image/thumb.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Máy xét nghiệm huyết học tự động Excbio EH 8300</h5>
+            <p class="card-text">Hãng sản xuất: EXCBIO – Trung Quốc
+            </p>
+            <a href="#" class="btn btn-primary">Liên hệ ngay!</a>
+          </div>
+        </div>
+        <div id="container-card-activated" class="card" style="width: 15rem;">
+          <img src="./image/thumb1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Máy đo chức năng hô hấp Monitor SMP 21/01 RD</h5>
+            <p class="card-text">
+              Hãng sx: Monitor 
+              Xuất xứ: Nga
+            </p>
+            <a href="#" class="btn btn-primary">Liên hệ ngay!</a>
+          </div>
+        </div>
+        <div id="container-card-activated" class="card" style="width: 15rem;">
+          <img src="./image/thumb2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Máy Holter huyết áp Labtech EC-ABP</h5>
+            <p class="card-text">
+              Hãng sx: Labtech
+              Xuất xứ: Hungary
+              Liên hệ mua hàng: 0966648119
+              </p>
+            <a href="#" class="btn btn-primary">Liên hệ ngay!</a>
+          </div>
+        </div>
+        <div id="container-card-activated" class="card" style="width: 15rem;">
+          <img src="./image/thumb3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ống môi trường vận chuyển vi rút</h5>
+            <p class="card-text">Hãng sản xuất: Chengwu Medical
+              Xuất xứ: Trung Quốc
+              Liên hệ
+             </p>
+            <a href="#" class="btn btn-primary">Liên hệ ngay!</a>
+          </div>
+        </div>
+        <div id="container-card-activated" class="card" style="width: 15rem;">
+          <img src="./image/thumb4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Máy nội soi cổ tử cung Lianchuang LC-9100C</h5>
+            <p class="card-text">
+              Model: LC-9100C
+              Hãng sản xuất: Lianchuang
+            </p>
+            <a href="#" class="btn btn-primary">Liên hệ ngay!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="container-new-product">
+      <p>
+        <a href="">XEM THÊM >></a>
+      </p>
+    </div>
+    <div id="container-text-hr">
+      <hr class="text-hr-first">
+      <p id="text-first">HOT SALE</p>
+      <hr class="text-hr-second">
+    </div>
+    <div id="container-card-second">
+      <div id="container-card-activated" class="card" style="width: 15rem;">
+        <img src="./image/thumb.jpg" class="card-img-top" alt="..." >
+        <div class="card-body">
+          <h5 class="card-title">Máy xét nghiệm huyết học tự động Excbio EH 8300</h5>
+          <p class="card-text">
+            Hãng sản xuất: EXCBIO – Trung Quốc
+            <!-- Xuất xứ: Trung Quốc -->
+          </p>
+          <a href="#" class="btn btn-primary">Liên hệ ngay!</a>
+        </div>
+      </div>
+      <div id="container-card-activated" class="card" style="width: 15rem;">
+        <img src="./image/thumb1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Máy xét nghiệm nước tiểu bán tự động W-200B Changchun Wancheng</h5>
+          <p class="card-text">
+            Hãng sản xuất: 
+          </p>
+          <a href="#" class="btn btn-primary">Liên hệ ngay!</a>
+        </div>
+      </div>
+      <div id="container-card-activated" class="card" style="width: 15rem;">
+        <img src="./image/thumb2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Máy Holter huyết áp Labtech EC-ABP</h5>
+          <p class="card-text">
+            Hãng sx: Labtech
+            Xuất xứ: Hungary
+            Liên hệ mua hàng: 0966648119 
+          </p>
+          <a href="#" class="btn btn-primary">Liên hệ ngay!</a>
+        </div>
+      </div>
+      <div id="container-card-activated" class="card" style="width: 15rem;">
+        <img src="./image/thumb3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Ống môi trường vận chuyển vi rút</h5>
+          <p class="card-text">
+            Hãng sản xuất: Chengwu Medical Xuất xứ: Trung Quốc Liên hệ
+          </p>
+          <a href="#" class="btn btn-primary">Liên hệ ngay!</a>
+        </div>
+      </div>
+      <div id="container-card-activated" class="card" style="width: 15rem;">
+        <img src="./image/thumb4.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Máy nội soi cổ tử cung Lianchuang LC-9100C</h5>
+          <p class="card-text">
+            Model: LC-9100C Hãng sản xuất: Lianchuang
+          </p>
+          <a href="#" class="btn btn-primary">Liên hệ ngay!</a>
+        </div>
+      </div>
+    </div>
+    <div id="container-new-product">
+      <p>
+        <a href="">XEM THÊM >></a>
+      </p>
+    </div>
+    <div id="container-text-hr">
+      <hr class="text-hr-first">
+      <p id="text-first">TIN TỨC-SỰ KIỆN</p>
+      <hr class="text-hr-second1">
+    </div>
+    <div id="container-highlight">
+      <a href="#">NỔI BẬT</a>
+    </div>
+    <div id="container-news">
+      <div class="card mb-3" style="max-width: 640px;border: none;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="./image/news-1.jpg" class="card-img" alt="..." >
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h6 class="card-title" >MỘT SỐ LƯU Ý VỀ QUE LẤY MẪU (TĂM BÔNG LẤY MẪU) BỆNH PHẨM
+              </h6>
+              <p class="card-text" >Các mẫu bệnh phẩm thường được thu thập là mẫu máu, dịch mũi, dịch hầu họng,
+                 dịch tỵ hầu, dịch rửa mũi, dịch súc họng, dịch phế quản, dịch phế nang, đờm, dịch nội khí quản, dịch não tủy, 
+                dịch phết trực tràng, phân, tinh dịch, nước tiểu, nước bọt, nốt phỏng, mảnh sinh thiết da. ...</p>
+              <p class="card-text"><small class="text-muted" > <a href="#">Xem Thêm >></a> </small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 640px;border: none;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="./image/news-2.jpg" class="card-img" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">HƯỚNG DẪN LẤY MẪU, ĐÓNG GÓI, BẢO QUẢN VÀ VẬN CHUYỂN MẪU BỆNH PHẨM BỆNH TRUYỀN NHIỄM
+              </h5>
+              <p class="card-text">Tài liệu này áp dụng cho các hoạt động thu thập, bảo quản, đóng gói và vận chuyển
+                chất lây nhiễm Các mẫu bệnh phẩm thường được thu thập là mẫu máu, dịch mũi, dịch hầu họng, dịch tỵ hầu, 
+                dịch rửa mũi, dịch súc họng, dịch phế quản, dịch phế nang, 
+              </p>
+              <p class="card-text"><small class="text-muted"> <a href="#">Xem Thêm >></a> </small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="container-news-second">
+      <div class="card mb-3" style="max-width: 640px;border: none;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="./image/news-3.jpg" class="card-img" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">THÔNG TƯ 14 CỦA BỘ Y TẾ</h5>
+              <p class="card-text">Căn cứ Luật Đấu thầu số 43/2013/QH13 ngày 26 tháng 11 năm 2013...
+                Căn cứ Nghị định số 63/2014/NĐ-CP ngày 26 tháng 6 năm 2014 của Chính phủ
+                a) Nguồn chi thường xuyên ngân sách nhà nước theo quy định của Luật Ngân sách nhà nước được cơ 
+                quan có thẩm quyền giao trong dự toán chi ngân sách hàng năm của cơ quan, 
+                
+              </p>
+              <p class="card-text"><small class="text-muted"> <a href="#">Xem Thêm >></a> </small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 640px;height: 250px;border: none;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="./image/news-4.jpg" class="card-img" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">BỆNH NHÂN COVID19 TIÊN LƯỢNG RẤT NẶNG ĐÃ CÓ TÍN HIỆU KHẢ QUAN</h5>
+              <p class="card-text">Sáng 12/6, theo thông tin từ Trung tâm hồi sức tích cực tại BV Tâm thần Bắc Giang,
+                bệnh nhân H.T. T. (31 tuổi) quê Lục Ngạn ..
+                Những ngày sau đó, bệnh nhân có diễn biến nặng suy hô hấp, chụp X-quang cho thấy phổi tổn thương lan tỏa 2 bên 
+                nên đã được chuyển đến Trung tâm Hồi sức tích cực vào 11h30 ngày 8/6.
+                .</p>
+              <p class="card-text"><small class="text-muted"> <a href="#">Xem Thêm >></a> </small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="container-highlight">
+      <a href="#">TIN MỚI</a>
+    </div>
+    <div id="container-news-day">
+      <div class="card-deck">
+        <div class="card">
+          <img src="./image/news-5.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">MỘT SỐ LƯU Ý VỀ QUE LẤY MẪU (TĂM BÔNG LẤY MẪU) BỆNH PHẨM</h5>
+            <p class="card-text">
+              Đưa tăm bông vào vùng hầu họng, miết và xoay tròn nhẹ 3-5 lần tại khu vực hai bên vùng amidan và thành sau họng.
+              Sau khi thu thập xong, mở nắp ống và đặt tăm bông vào ống môi trường vận chuyển.
+            </p>
+            <p class="card-text"><small class="text-muted"> <a href="">Xem Thêm >></a> </small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./image/news-6.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">MỘT SỐ THÔNG TIN CƠ BẢN VỀ MÁY XÉT NGHIỆM NƯỚC TIỂU</h5>
+            <p class="card-text">
+              Màu sắc của nước tiểu xuất hiện do sắc tố urochrome và có thể thay đổi theo nồng độ và thành phần hóa học 
+              của nước tiểu. Màu nước tiểu có thể thay đổi từ màu vàng nhạt khi loãng hơn đến thay đổi từ màu vàng nhạt khi loãng hơn đến
+            </p>
+            <p class="card-text"><small class="text-muted"> <a href="">Xem Thêm >></a></small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./image/news-7.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">LẮP ĐẶT VÀ BÀN GIAO MÁY XÉT NGHIỆM SINH HÓA TỰ ĐỘNG TẠI TRUNG TÂM ICU BẮC GIANG</h5>
+            <p class="card-text">
+              Người thực hiện việc lấy mẫu bệnh phẩm phải được đào tạo/ tập huấn về kỹ năng thu thập mẫu bệnh phẩm.ỹ năng thu thập mẫu bệnh phẩm.
+              Việc thu thập mẫu bệnh phẩm phải bảo đảm an toàn cho ... 
+              
+            </p>
+            <p class="card-text"><small class="text-muted"> <a href="#">Xem Thêm >></a> </small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./image/news-8.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">ỐNG MÔI TRƯỜNG VẬN CHUYỂN VI RÚT: MỤC ĐÍCH VÀ HƯỚNG DẪN SỬ DỤNG</h5>
+            <p class="card-text">
+              Lấy tăm bông ra khỏi túi.
+              Đưa tăm bông vào lỗ mũi, vuông góc với mũi và chạm đến thành sau họng mũi, để tăm bông nằm trong hốc mũi 15-30 giây
+              Nhẹ nhàng xoay tròn tăm bông trong mũi 3 lần rồi từ
+            </p>
+            <p class="card-text"><small class="text-muted"> <a href="#">Xem Thêm >></a> </small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="container-new-product" style="margin-top: 50px;">
+      <p>
+        <a href="">XEM THÊM >></a>
+      </p>
+    </div>
+    <div id="container-text-hr" style="margin-top: 20px;">
+      <hr class="text-hr-first">
+      <p id="text-first"> GIỚI THIỆU </p>
+      <hr class="text-hr-second">
+    </div>
+    <div id="container-introduce">
+      <div id="container-introduce-top">
+        <div id="container-introduce-img">
+            <img src="./image/introduce.jpeg" alt="">
+        </div>
+        <div id="container-introduce-text">
+            <div id="text-title">
+              <p>VỀ BÁCH HỢP</p>
+            </div>
+            <div id="text-content">
+                <p>
+                  Trải qua quá trình hình thành và phát triển, Công ty TNHH Thiết bị Công nghệ Bách Hợp 
+                  là một trong những nhà phân phối thiết bị y tế có uy tín tại Việt Nam, chuyên tư vấn, 
+                  cung cấp và sửa chữa, bảo dưỡng sản phẩm trang thiết bị y tế trên phạm vi toàn quốc. 
+                  Với đội ngũ kỹ sư trình độ chuyên môn cao, có kinh nghiệm lâu năm, đội ngũ nhân viên được 
+                  đào tạo bài bản về chuyên môn, thiết bị y tế Bách Hợp đã, đang và sẽ nỗ lực không ngừng mở rộng quy mô và
+                   nâng cao chất lượng sản phẩm nhằm cung cấp dịch vụ tốt nhất đến quý khách hàng.
+                </p>
+                <button>Xem Chi Tiêt</button>
+            </div>
+        </div>
+      </div>
+      <div id="container-introduce-below">
+        <div id="container-introduce-text" >
+          <div id="text-title">
+            <p>DỊCH VỤ CUNG CẤP</p>
+          </div>
+          <div id="text-content">
+              <p>
+                Hiện nay, Công ty TNHH Thiết bị Công nghệ Bách Hợp đang là nhà phân phối của nhiều hãng sản
+                xuất có uy tín trên trên thế giới từ châu Á, châu Âu và châu Mỹ với các sản phẩm tập trung 
+                ở danh mục thiết bị xét nghiêm, thiết bị hồi sức cấp cứu, thiết bị Vật lý trị liệu-Phục hồi chức năng
+                ,...Chúng tôi cung cấp một số loại hình dịch vụ bao gồm: Cung cấp thiết bị y tế; Cho thuê thiết bị y tế;
+                Sửa chữa bảo dưỡng thiết bị y tế; Tư vấn xây dựng thiết bị y tế cho phòng khám, bệnh viện
+              </p>
+              <button>Xem Chi Tiêt</button>
+          </div>
+        </div>
+        <div id="container-introduce-img">
+          <img src="./image/introduce2.jpg" alt="">
+        </div>
+      </div>
+      </div>
+    </div>
+    <div id="container-mailbox">
+      <div id="container-form-text">
+        <p>HÒM THƯ GÓP Ý & LIÊN HỆ</p>
+      </div>    
+          <div id="container-form">
+              <div id="container-form-input">
+                  <input type="text" name="name" placeholder="Mời bạn nhập phản hồi....">
+              </div>
+              <div id="container-form-btn">
+                  <button></button>
+                  <button></button>
+              </div>
+              <div id="container-form-btn1">
+                  <button>SEND</button>
+              </div>
+          </div>
+    </div>
+    <div id="footer">
+        <div id="footer-img">
+            <img src="./image/logo.png"/>
+            <!-- <i class="fab fa-facebook"></i> -->
+        </div>
+        <div id="footer-link">
+          <p>VỀ CHÚNG TÔI</p>
+          <br>
+          <a href="">Giới Thiệu</a>
+          <br>
+          <a href="">Sản phẩm</a>
+          <br>
+          <a href="">Dịch vụ</a>
+          <br>
+          <a href="">Tin tức-Sự kiện</a>
+          <br>
+          <a href="">Liên hệ</a>
+        </div>
+        <div id="footer-link">
+          <p>HỖ TRỢ MUA HÀNG</p>
+          <br>
+          <a href="">Điều khoản dịch vụ</a>
+          <br>
+          <a href="">Hướng dẫn thanh toán</a>
+          <br>
+          <a href="">Hướng dẫn mua hàng</a>
+          <br>
+          <a href="">Hướng dẫn giao nhận</a>
+        </div>
+        <div id="footer-link">
+          <p>THÔNG TIN</p>
+          <br>
+          <a href="">www.bachhopmed.vn</a>
+          <br>
+          <a href=""> 0966 648 119</a>
+          <br>
+          <a href=""> Số 10, Lô A11, Geleximco Lê Trọng Tấn, An Khánh, Hoài Đức,<br>
+             Hà Nội</a>
+        </div>
+    </div>
+    <div id="footer-end">
+        <p>Bản quyền thuộc về Công ty TNHH Thiết Bị Công Nghệ Bách Hợp</p>
+    </div>
+</div>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+    crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
